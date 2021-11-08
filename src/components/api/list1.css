@@ -1,0 +1,22 @@
+.dogPhoto{
+    transition:  1s ease-in-out;
+}
+
+.dogPhoto:hover{
+    transform: scale(1.1);
+
+}
+
+.dogPhoto:hover .dogBg{
+    filter: blur(20%);
+}
+.dogPhoto:hover .dogBg{
+    filter: invert(1);
+    transform: scale(0.1);
+}
+
+.nav-link:hover .nav-link:not(:hover){
+    opacity: .5;
+    filter: blur(2%);
+    font-size: larger;
+}
