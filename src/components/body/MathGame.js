@@ -52,7 +52,7 @@ export default function MathGame() {
     
     useEffect(() => {       
 
-        if (click === challenge){
+        if (click == challenge){
             
             toast.success(`🦄 Wow so easy!\nYou took ${moves} moves`, {
                     position: "top-center",
@@ -77,7 +77,7 @@ export default function MathGame() {
     }, [movesAllowed, middleFunction])
 
     useEffect( () => {
-        if (moves >= movesAllowed && click!==challenge){
+        if (moves >= movesAllowed && click!=challenge){
             toast.error(`You lost the game. Restarting the level.`, {
                 position: "top-center",
                 autoClose: 3000,
