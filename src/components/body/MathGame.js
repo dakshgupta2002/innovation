@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Slide from 'react-reveal/Slide';
 import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
 import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure();
@@ -95,7 +96,7 @@ export default function MathGame() {
 
     
     return (
-        <div className="container">          
+        <div className="container" style={{ minHeight: "70vh", paddingTop: "5%" }}>          
 
             <div>
                 <Slide left>
@@ -112,9 +113,9 @@ export default function MathGame() {
             </div>
             
             <br /><br />
-            <button className="btn btn-outline-primary mx-4" onClick={dub}>Double</button>
-            <button className="btn btn-outline-primary mx-4" onClick={decrement}>Decrease by 1</button>
-            <button className="btn btn-danger mx-4" onClick={refresh}>Restart</button>
+            <Button className="mx-1" variant="contained" color="success" onClick={dub}>Double</Button>
+            <Button className="mx-1" variant="outlined" color="error" onClick={decrement}>Decrease by 1</Button>
+            <Button className="mx-5" variant="contained"  onClick={refresh}>Restart</Button>
         </div>
     );
 }

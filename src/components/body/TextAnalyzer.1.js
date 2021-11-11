@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 export default function TextAnalyzer() {
 
-    const [data, setData] = useState("enter your text");
+    const [data, setData] = useState("Enter your text");
 
     const uppercase = () => {
         setData(data.toUpperCase());
@@ -29,7 +29,7 @@ export default function TextAnalyzer() {
     }
     return (
 
-        <div className="container">
+        <div className="container" style={{ minHeight: "70vh", paddingTop:"5%" }}>
 
             <h1>Type your text below to TextAnalyzer it</h1>
 

@@ -12,6 +12,7 @@ export default function Footer() {
         fontFamily: "Helvetica",
         left: "0px",
         right: "0px",
+        marginTop: "5%"
     };
     return (
         <footer className="footer" style={foot}>

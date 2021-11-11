@@ -28,7 +28,7 @@ export default function GuessTheNum() {
 
 
     return (
-        <div className="container">          
+        <div className="container" style={{ minHeight: "50vh", marginTop: "5%" }}>          
 
             <div>
                 <Slide left>

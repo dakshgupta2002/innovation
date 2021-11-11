@@ -38,7 +38,7 @@ li{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .linkDiv{
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-radius: 10%;
     filter: opacity(75%);
 }
